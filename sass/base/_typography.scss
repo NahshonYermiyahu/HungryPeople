@@ -1,0 +1,76 @@
+.heading-h1 {
+    font-family: Lemonada, sans-serif;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 17rem;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.heading-h1::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    height: 0.65rem;
+    width: 10%;
+    background-color: #E8C300;
+    border-radius: 5rem;
+}
+
+.heading-h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.86rem;
+    letter-spacing: 0.65rem;
+    text-transform: uppercase;
+}
+
+.schedule-p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: #ffffff;
+}
+
+.heading-h2{
+    font-family: Lemonada, sans-serif;
+    font-size: 4.8rem;
+    line-height: 9rem;
+    text-transform: uppercase;
+    text-align: center;
+};
+
+.heading-h2::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    height: 0.65rem;
+    width: 12%;
+    background-color: #E8C300;
+    border-radius: 5rem;
+}
+
+.heading-h3{
+    font-family: Lemonada, sans-serif;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+};
+
+.text-primary {
+    font-family: Open Sans, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    text-align: center;
+    margin: 2.7rem auto;
+}
+
+.text-secondary {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.86rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: center;
+}
