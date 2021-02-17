@@ -40,9 +40,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-h1 {
-  font-family: Lemonada, sans-serif;
+  font-family: "Arima Madurai", sans-serif;
   font-size: 11rem;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 17rem;
   width: max-content;
   text-transform: uppercase;
@@ -74,8 +74,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-h2 {
-  font-family: Lemonada, sans-serif;
+  font-family: "Arima Madurai", sans-serif;
   font-size: 4.8rem;
+  font-weight: 900;
   line-height: 9rem;
   text-transform: uppercase;
   text-align: center;
@@ -92,11 +93,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-h3 {
-  font-family: Lemonada, sans-serif;
+  font-family: "Arima Madurai", sans-serif;
   font-size: 2.2rem;
+  font-weight: 900;
   line-height: 2.2rem;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 .text-primary {
@@ -280,6 +282,18 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.header__nav .nav-left div a,
+.header__nav .nav-right div a {
+  transition: font-size, color 0.2s;
+}
+.header__nav .nav-left div a:hover,
+.header__nav .nav-right div a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.header__nav .nav-left div a:active,
+.header__nav .nav-right div a:active {
+  font-size: 1.52rem;
+}
 .header__nav .nav-left {
   justify-content: flex-start;
 }
@@ -329,6 +343,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   position: relative;
+  transition: border 0.1s;
 }
 .header__content .networks a:not(:last-child) {
   margin-bottom: 2rem;
@@ -338,6 +353,12 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+.header__content .networks a:hover {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.header__content .networks a:active {
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .header__content .headings {
   position: absolute;
@@ -353,10 +374,25 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header__content .headings .headings__buttons .btn-header:nth-child(1) {
   background-color: #E8C300;
+  border: 1px solid #E8C300;
+  transition: border 0.1s;
+}
+.header__content .headings .headings__buttons .btn-header:nth-child(1):hover {
+  border: 2px solid black;
+}
+.header__content .headings .headings__buttons .btn-header:nth-child(1):active {
+  border: 3px solid black;
 }
 .header__content .headings .headings__buttons .btn-header:nth-child(2) {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: border 0.1s;
+}
+.header__content .headings .headings__buttons .btn-header:nth-child(2):hover {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.header__content .headings .headings__buttons .btn-header:nth-child(2):active {
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .header__content .headings .headings__str {
   display: block;
@@ -367,6 +403,13 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin: 6% auto;
   padding: 0.9rem;
+  transition: border 0.1s;
+}
+.header__content .headings .headings__str:hover {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.header__content .headings .headings__str:active {
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .header__content .headings .headings__str div {
   width: 5.32rem;
@@ -519,8 +562,9 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 .menu__cards .card .card-price {
-  font-family: Lemonada, sans-serif;
+  font-family: "Arima Madurai", sans-serif;
   font-size: 2.2rem;
+  font-weight: 900;
   line-height: 2.2rem;
   text-transform: uppercase;
   text-align: center;
@@ -549,8 +593,9 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .private-events__block-l div p, .private-events__block-r div p {
-  font-family: Lemonada, sans-serif;
+  font-family: "Arima Madurai", sans-serif;
   font-size: 3.2rem;
+  font-weight: 900;
   line-height: 1.6rem;
   width: max-content;
   padding-left: 4rem;
@@ -588,6 +633,136 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .gallery__item img {
   width: 100%;
+}
+
+.contact {
+  height: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4%;
+}
+.contact__heading {
+  width: 50%;
+}
+.contact__form-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2.7rem auto;
+}
+.contact__form-group input {
+  height: 8rem;
+  margin: 0.5%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.65rem;
+  border: none;
+}
+.contact__form-group input:focus {
+  outline: none;
+}
+.contact__form-group input:not(:last-child) {
+  flex: 1 0 30%;
+  background-color: #cdcdcd;
+  color: #5f5f5f;
+  justify-content: flex-start;
+  padding-left: 1.5%;
+  font-size: 1.86rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.contact__form-group input:last-child {
+  width: 48%;
+  background-color: #E8C300;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  color: #ffffff;
+}
+.contact__form-group textarea {
+  width: 100%;
+  height: 20rem;
+  margin: 0.5%;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0.65rem;
+  background-color: #cdcdcd;
+  color: #5f5f5f;
+  justify-content: flex-start;
+  padding: 1.5%;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.contact__form-group textarea:focus {
+  outline: none;
+}
+.contact__form-group .contacts {
+  height: 8rem;
+  margin: 0.5%;
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__form-group .contacts__item {
+  display: flex;
+}
+.contact__form-group .contacts__item p {
+  padding-left: 3%;
+  color: #909090;
+  width: max-content;
+  white-space: nowrap;
+  line-height: 3rem;
+}
+.contact__form-group .contacts__item p:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.contact__form-group .contacts__item p:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.contact__form-group .contacts__item p:nth-child(3) {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.contact__form-group .contacts__item ion-icon {
+  font-size: 3rem;
+  color: #E8C300;
+}
+
+.maps {
+  width: 100%;
+}
+.maps__content {
+  height: 63rem;
+  background-image: url("../img/maps.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.maps__bottom {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #909090;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maps__bottom p {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+.maps__bottom p span {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

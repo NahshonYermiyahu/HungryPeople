@@ -37,6 +37,22 @@
       display: flex;
       align-items: center;
       border-bottom: 1px solid rgba(255,255,255,0.2);
+
+      div {
+
+        a {
+          transition: font-size ,color .2s;
+        }
+
+        a:hover {
+          color: rgba(255,255,255,0.7);
+        }
+
+        a:active {
+          font-size: 1.52rem;
+        }
+
+      }
     }
 
     .nav-left {
@@ -90,6 +106,7 @@
 
       a {
         @include circle;
+        transition: border .1s;
 
         &:not(:last-child) {
           margin-bottom: 2rem;
@@ -98,6 +115,14 @@
         img {
           @include center;
         }
+      }
+
+      a:hover {
+        border: 2px solid rgba(255,255,255,0.2);
+      }
+
+      a:active {
+        border: 3px solid rgba(255,255,255,0.2);
       }
     }
 
@@ -115,11 +140,30 @@
 
         .btn-header:nth-child(1) {
           background-color: #E8C300;
+          border: 1px solid #E8C300;
+          transition: border .1s;
+
+          &:hover {
+            border: 2px solid black;
+          }
+
+          &:active {
+            border: 3px solid black;
+          }
         }
 
         .btn-header:nth-child(2) {
           background-color: transparent;
           border: 1px solid rgba(255,255,255,0.2);
+          transition: border .1s;
+
+          &:hover {
+            border: 2px solid rgba(255,255,255,0.2);
+          }
+
+          &:active {
+            border: 3px solid rgba(255,255,255,0.2);
+          }
         }
       }
 
@@ -127,6 +171,15 @@
         @include circle;
         margin: 6% auto;
         padding: 0.9rem;
+        transition: border .1s;
+
+        &:hover {
+          border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        &:active {
+          border: 3px solid rgba(255,255,255,0.2);
+        }
 
         div {
           width: 5.32rem;
