@@ -9,17 +9,33 @@
   position: relative;
 }
 
+.about {
+
+  .heading-h2:after {
+    width: 48%;
+  }
+}
+
 .our_team {
   background-image: url("../img/our-team-bg.svg");
+
+  .heading-h2:after {
+    width: 35%;
+  }
 }
 
 .book {
   position: relative;
 
+  .heading-h2:after {
+    width: 35%;
+  }
+
   .form-group {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 2.7rem auto;
 
     input {
@@ -33,6 +49,10 @@
       &:focus {
         outline: none;
       }
+
+      @media only screen and (max-width: 85em){
+        height: 6rem;
+      }
     }
 
     input:not(:last-child) {
@@ -44,6 +64,10 @@
       font-size: 1.86rem;
       font-weight: 400;
       line-height: 2.6rem;
+
+      @media only screen and (max-width: 85em){
+        width: 98%;
+      }
     }
 
     input:last-child {
@@ -60,6 +84,10 @@
 
 .specialties {
   background-image: url("../img/specialty's-bg.svg");
+
+  .heading-h2:after {
+    width: 21%;
+  }
 
   .pagination {
     z-index: 100;
@@ -95,7 +123,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 7rem 4rem 4rem 4rem;
 
@@ -131,7 +159,7 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: space-between;
     padding: 4rem 0;
 
@@ -139,7 +167,6 @@
       display: flex;
       padding: 1rem 4rem;
       height: 6.5rem;
-      width: 33.3%;
 
       p {
         font-size: 1.6rem;
@@ -317,11 +344,17 @@
       margin: 0.5%;
       width: 48%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
+      flex-wrap: wrap;
 
       &__item {
         display: flex;
+        margin: 1% 0;
+
+        &:not(:first-child){
+          padding-left: 3%;
+        }
 
         p {
           padding-left: 3%;
@@ -329,6 +362,7 @@
           width: max-content;
           white-space: nowrap;
           line-height: 3rem;
+
         }
 
         p:nth-child(1) {

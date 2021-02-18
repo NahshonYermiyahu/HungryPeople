@@ -1,10 +1,22 @@
 .heading-h1 {
     font-family: "Arima Madurai", sans-serif;
-    font-size: 11rem;
+    font-size: 12.8rem;
     font-weight: 800;
-    line-height: 17rem;
+    line-height: 21rem;
     width: max-content;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 75.6em){
+        font-size: 11rem;
+    }
+
+    @media only screen and (max-width: 65.5em){
+        font-size: 10rem;
+    }
+
+    @media only screen and (max-width: 59.6em){
+        font-size: 9rem;
+    }
 }
 
 .heading-h1::after {
@@ -30,6 +42,7 @@
     font-weight: 700;
     line-height: 1.6rem;
     color: #ffffff;
+    width: max-content;
 }
 
 .heading-h2{
