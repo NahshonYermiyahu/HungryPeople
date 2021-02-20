@@ -351,7 +351,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header__nav .nav-left div a,
 .header__nav .nav-right div a {
-  transition: font-size, color 0.2s;
+  transition: all 0.2s;
 }
 .header__nav .nav-left div a:hover,
 .header__nav .nav-right div a:hover {
@@ -410,7 +410,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   position: relative;
-  transition: scale 0.1s;
+  transition: all 0.1s;
 }
 .header__content .networks a:not(:last-child) {
   margin-bottom: 20px;
@@ -462,12 +462,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .header__content .headings .headings__buttons .btn-header:nth-child(1) {
   background-color: #E8C300;
   border: 1px solid #E8C300;
-  transition: scale 0.1s;
+  transition: all 0.2s;
 }
 .header__content .headings .headings__buttons .btn-header:nth-child(2) {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: scale 0.1s;
+  transition: all 0.2s;
 }
 .header__content .headings__str {
   display: block;
@@ -483,7 +483,7 @@ p, h1, h2, h3, h4, h5, h6 {
   right: 50%;
   transform: translateX(50%);
   top: 80%;
-  transition: scale 0.1s;
+  transition: all 0.1s;
 }
 .header__content .headings__str:hover {
   transform: translateX(50%) scale(0.97, 0.97);

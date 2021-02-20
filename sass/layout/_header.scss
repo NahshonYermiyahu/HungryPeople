@@ -63,7 +63,7 @@
         text-align: center;
 
         a {
-          transition: font-size ,color .2s;
+          transition: all .2s;
         }
 
         a:hover {
@@ -128,7 +128,7 @@
 
       a {
         @include circle;
-        transition: scale .1s;
+        transition: all .1s;
 
         &:not(:last-child) {
           margin-bottom: 20px;
@@ -183,13 +183,13 @@
         .btn-header:nth-child(1) {
           background-color: #E8C300;
           border: 1px solid #E8C300;
-          transition: scale .1s;
+          transition: all .2s;
         }
 
         .btn-header:nth-child(2) {
           background-color: transparent;
           border: 1px solid rgba(255,255,255,0.2);
-          transition: scale .1s;
+          transition: all .2s;
         }
       }
     }
@@ -201,7 +201,7 @@
       right: 50%;
       transform: translateX(50%);
       top: 80%;
-      transition: scale .1s;
+      transition: all .1s;
 
       &:hover {
         transform: translateX(50%) scale(0.97,0.97);
